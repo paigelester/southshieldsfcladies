@@ -1,0 +1,10 @@
+.form-label {
+    display: block;
+    font-size: $font-sm;
+    margin: $spacing-xs;
+
+    &-inline {
+        display: inline-block;
+        margin: 0 $spacing-xs 0 0;
+    }
+}

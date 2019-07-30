@@ -1,0 +1,20 @@
+.under-construction {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: $colour-brand;
+
+    &-content {
+        @include AlignCenter;
+
+        color: $colour-white;
+
+        img {
+            margin-bottom: $spacing-sm;
+        }
+
+        h1 {
+            margin-bottom: $spacing-xs;
+        }
+    }
+}

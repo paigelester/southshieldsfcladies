@@ -1,0 +1,14 @@
+table {
+    border-collapse: collapse;
+
+    tr th {
+        font-weight: bold;
+        padding: $spacing-xs;
+        border: 1px solid black;
+    }
+
+    tr td {
+        padding: $spacing-xs;
+        border: 1px solid black;
+    }
+}

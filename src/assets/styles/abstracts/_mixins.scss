@@ -1,0 +1,28 @@
+@mixin AlignCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile-lg {
+        @media (min-width: 25rem) { @content };
+    }
+
+    @if $breakpoint == tab-port {
+        @media (min-width: 37.5rem) { @content };
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (min-width: 50rem) { @content };
+    }
+
+    @if $breakpoint == desktop {
+        @media (min-width: 75rem) { @content };
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5rem) { @content };
+    }
+}
